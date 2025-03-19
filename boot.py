@@ -1,6 +1,8 @@
 from storage import disable_usb_drive
 from usb_cdc import disable
 
-# Disable USB drive and CDC
-disable_usb_drive()
-disable()
+HIDE_DEVICE = True
+
+if HIDE_DEVICE:
+    disable_usb_drive()
+    disable()
