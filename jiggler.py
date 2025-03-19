@@ -5,7 +5,7 @@ from adafruit_hid.mouse import Mouse
 
 
 class Jiggler:
-    def __init__(self, shift: int, wait: float) -> None:
+    def __init__(self, shift: int = 5, wait: float = 3) -> None:
         self.shift = shift
         self.wait = wait
         self.state = False
