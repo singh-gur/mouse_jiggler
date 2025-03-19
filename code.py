@@ -1,4 +1,7 @@
 from jiggler import Jiggler
 
+jiggler = Jiggler()
+jiggler.start()
+
 while True:
-    Jiggler().jiggle()
+    jiggler.tick()
